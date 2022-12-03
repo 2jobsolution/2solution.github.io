@@ -390,7 +390,7 @@ https://2soution.tech
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                  <button type="submit">Send</button>
                 </fieldset>
               </div>
             </div>
@@ -428,13 +428,16 @@ https://2soution.tech
     Host : "smtp.gmail.com",
     Username : "nishantraj.office@gmail.com",
     Password : "Neha@@@123",
-    To : 'nishantraj.office@gmail.com',
+    To : 'trisbgp@gmail.com',
     From : document.getElementById("Email").value,
     Subject : "New contact form Query",
     Body : "Name: " +document.getElementById("name").value
-}).then(
-  message => alert(message)
-);
+        + "<br> Surname: " +document.getElementById("surname").value
+        + "<br> Email: " +document.getElementById("email").value
+        + "<br> Message: " +document.getElementById("message").value
+      }).then(
+      message => alert("message sent")
+      );
     }
   </script>
 </body>
